@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+
+. mtrn2500_make
+ros2 run assignment3 assignment3
+ros2 launch assignment3 joy_node.py
+rviz2 run assignment3 assignment3
+
+--------------------------------------------------------------------------------
+
+Please follow these guidelines when you have cloned the repository to your computer:
+
+0. Get in contact with me. Communication is key to a successful assignment.
+    Add me (Dan Nguyen) on facebook or message me on teams
+
+1. Install the VScode extension gitlens
+    - This will allow you to see and compare changes and see its author.
+    - This will allow you to easily accept changes if your branch is behind
+
+2. Checkout these following branches specific to the type of development you are doing
+    - dev: merge branches into here to check if combined features work
+    - shape_display
+    - shape_move
+    - UAV_display
+    - UAV_controls
+    - bug_fix
+
+3. Only commit when you have completed a feature!
+    - If you accidentally forgot to do something in your commit, you can make changes then
+        git add blah.file
+        git commit --amend
+    - Useful if you also want to change your commit message
+
+4. Push the committed changes into the specific branch if you know it's working.
+    - If your branch is behind and you need to push then
+        git pull --rebase
+
+5. When we want to combine features from multiple branches, merge them into dev and check if working
+
+6. If working then merge dev into master
+
+7. Don't touch the review branch
+
+8. Talk to me if you want to make any changes to the current approach I have set out
+    I am more than happy to consider
+
+--------------------------------------------------------------------------------
+
+What needs to be done?
+
+- Copy and paste Sphere code lmao
+
+- The following shapes need to be implemented
+    
+    octagonal_prism         (done)
+    rectangular_prism       (done)
+    triangular_prism        (done)
+    octagonal_pyramid       (done)
+    rectangular_pyramid     (done)
+    triangular_pyramid      (done)
+    square_pyramid          (done)
+    sphere                  (done)
+    parallelepiped          (done)
+    cube                    (done)
+    cone                    (done)
+    cylinder                (done)
+    flat_plane              (done)
+    
+    triangle_list           (done)
+    point_list              (done)
+
+- Implement the methods to move shapes
+
+- Checkout marker_broadcaster from assignment 2 for idea on how to control UAV
+
+--------------------------------------------------------------------------------
+
+Important Concepts
+
+- Polymorphism: Ability of an object to take other forms
+    i.e. parent class reference to refer to child class object
+
+- Inheritance: Derive class from another class for a heirarchy of classes
+
+- Composition: Class that references one or more objects of other classes
